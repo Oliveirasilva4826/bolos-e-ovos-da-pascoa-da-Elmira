@@ -4,6 +4,7 @@ body {
   background-color: #fff5f7;
 }
 
+/* HEADER */
 header {
   background-color: #d2691e;
   padding: 15px;
@@ -18,6 +19,7 @@ nav a {
   font-weight: bold;
 }
 
+/* BANNER */
 .banner {
   background-color: #ffe4e1;
   padding: 40px;
@@ -28,11 +30,13 @@ nav a {
   color: #8b4513;
 }
 
+/* CONTAINER */
 .container {
   padding: 30px;
   text-align: center;
 }
 
+/* CARDÁPIO */
 .bolos {
   display: flex;
   justify-content: center;
@@ -66,7 +70,7 @@ nav a {
   color: #555;
 }
 
-/* INFO DO CARDÁPIO */
+/* LISTA DE INFO */
 .info {
   list-style: none;
   padding: 0;
@@ -79,7 +83,7 @@ nav a {
   margin-bottom: 5px;
 }
 
-/* BOTÃO DO CARDÁPIO */
+/* BOTÕES */
 .botao-cardapio {
   display: inline-block;
   margin-top: 10px;
@@ -103,10 +107,47 @@ nav a {
   font-weight: bold;
 }
 
+/* FOOTER */
 footer {
   background-color: #d2691e;
   color: white;
   text-align: center;
   padding: 10px;
   margin-top: 30px;
+}
+
+/* 📱 RESPONSIVO PARA CELULAR */
+@media (max-width: 768px) {
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .banner {
+    padding: 25px 15px;
+  }
+
+  .banner h1 {
+    font-size: 22px;
+  }
+
+  .container {
+    padding: 20px 10px;
+  }
+
+  .bolos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bolo {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .botao {
+    width: 90%;
+    padding: 15px;
+  }
 }
